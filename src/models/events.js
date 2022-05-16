@@ -1,4 +1,4 @@
-import {pool} from '../db/connection.js';
+import { pool } from '../db/connection.js';
 
 async function queryAllEvents() {
     const result = await pool.query('SELECT * FROM events ORDER BY id ASC;');
@@ -6,4 +6,4 @@ async function queryAllEvents() {
     return result.rows;
 }
 
-export {queryAllEvents};
+export { queryAllEvents };

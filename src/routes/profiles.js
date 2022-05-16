@@ -1,5 +1,5 @@
 import express from 'express';
-import {getProfileHistory, deleteProfileHistory} from '../controllers/profiles.js';
+import { getProfileHistory, deleteProfileHistory } from '../controllers/profiles.js';
 
 const profileRouter = express.Router();
 

@@ -1,5 +1,5 @@
-import {pool} from '../connection.js';
-import {dummyEventArr} from './dummyData.js';
+import { pool } from '../connection.js';
+import { dummyEventArr } from './dummyData.js';
 
 async function populateEventTable() {
   dummyEventArr.forEach(async (e) => {

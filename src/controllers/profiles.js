@@ -1,4 +1,4 @@
-import {pool} from '../db/connection.js';
+import { pool } from '../db/connection.js';
 
 async function getProfileHistory(req, res) {
   console.log('getting profile data');
@@ -8,7 +8,7 @@ async function getProfileHistory(req, res) {
 
   res.json({
     success: true,
-    message: 'data recieved from profile',
+    message: 'Profile data recieved.',
     payload: data.rows,
   });
 }
@@ -20,8 +20,8 @@ async function deleteProfileHistory(req, res) {
 
   res.json({
     success: true,
-    message: 'data deleted, homie safe',
+    message: 'Profile deleted.',
   });
 }
 
-export {getProfileHistory, deleteProfileHistory};
+export { getProfileHistory, deleteProfileHistory };

@@ -5,4 +5,4 @@ const pool = new pg.Pool({
     ssl: false
 });
 
-export {pool};
+export { pool };

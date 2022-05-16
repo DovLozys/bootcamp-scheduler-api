@@ -56,4 +56,4 @@ const dummyEventArr = [
         
         // export { dummyProfile };
         
-export {dummyEventArr};
+export { dummyEventArr };

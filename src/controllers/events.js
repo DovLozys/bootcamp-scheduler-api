@@ -1,5 +1,5 @@
-import {pool} from '../db/connection.js';
-import {queryAllEvents} from '../models/events.js';
+import { pool } from '../db/connection.js';
+import { queryAllEvents } from '../models/events.js';
 
 async function getAllEvents(req, res) {
   const events = await queryAllEvents();
@@ -25,7 +25,7 @@ async function getUpcomingEvents(req, res) {
 
 async function createEvent(req, res) {
   const data = await pool.query(
-    'INSERT INTO events (event_name, event_description, event_date, event_start, event_duration, event_category) VALUES ($1, $2, $3, $4, $5, $6); ',
+    'INSERT INTO events (event_name, event_description, event_date, event_start, event_duration, event_category) VALUES ($1, $2, $3, $4, $5, $6);',
     [
       req.body.event_name,
       req.body.event_description,
@@ -75,4 +75,4 @@ async function updateEvent(req, res) {
   });
 }
 
-export {getAllEvents, getUpcomingEvents, createEvent, deleteEvent, getEvent, updateEvent};
+export { getAllEvents, getUpcomingEvents, createEvent, deleteEvent, getEvent, updateEvent };
