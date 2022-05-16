@@ -6,11 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./src/index.js",
-    "createtable": "node ./src/db/scripts/createEventTable.js",
-    "populatetable": "node ./src/db/scripts/populateEventTable.js",
-    "selectdata": "node ./src/db/scripts/selectData.js",
-    "dev": "nodemon ./src/index.js"
+    "start": "node -r dotenv/config ./src/index.js",
+    "createtable": "node -r dotenv/config ./src/db/scripts/createEventTable.js",
+    "populatetable": "node -r dotenv/config ./src/db/scripts/populateEventTable.js",
+    "selectdata": "node -r dotenv/config ./src/db/scripts/selectData.js",
+    "dev": "nodemon -r dotenv/config ./src/index.js"
   },
   "author": "",
   "license": "ISC",
